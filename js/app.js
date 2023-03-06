@@ -2,10 +2,6 @@
 var url = window.location.href;
 var swLocation = '/Tuitor/sw.js';
 
-
-
-
-
 //registro del Service Worker
 if (navigator.serviceWorker){
 
@@ -13,7 +9,7 @@ if (navigator.serviceWorker){
         swLocation = '/sw.js';
     }
     navigator.serviceWorker.register(swLocation);
-}
+};
 
 
 
