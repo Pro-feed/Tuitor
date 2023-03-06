@@ -1,6 +1,18 @@
+//para obtener todo el url y que consiga cargar el sw de la raiz de donde este
+var url = window.location.href;
+var swLocation = '/Tuitor/sw.js';
+
+
+
+
+
 //registro del Service Worker
 if (navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js');
+
+    if (url.includes ('localhost')){
+        swLocation = '/sw.js'
+    }
+    navigator.serviceWorker.register(swLocation);
 }
 
 
