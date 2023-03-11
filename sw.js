@@ -1,6 +1,6 @@
 
 //Importamos scrip externo
-importScripts ('/Tuitor/js/sw-utils.js');
+importScripts ('js/sw-utils.js');
 
 const Static_cache    = 'static-v1';
 const Dynamic_cache   = 'dynamic-v1';

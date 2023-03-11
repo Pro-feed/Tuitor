@@ -5,7 +5,7 @@ var swLocation = '/Tuitor/sw.js';
 //registro del Service Worker
 if (navigator.serviceWorker){
 
-    if (url.includes ('localhost')){
+    if ( url.includes('localhost') ) {
         swLocation = '/sw.js';
     }
     navigator.serviceWorker.register(swLocation);
