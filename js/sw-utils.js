@@ -15,4 +15,4 @@ function actualizaCacheDinamico (dynamicCache, req, res){
     } else {
         return res;
     }
-};
+}

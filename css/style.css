@@ -11,6 +11,12 @@
     font-size: 16px;
     background-color: #dde1e2; 
     width: 100%;
+ 
+    /*Con el codigo a seguir evitamos el pull to refresh.*/
+    overscroll-behavior-y: contain;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 /* Personalizados */
@@ -186,7 +192,7 @@ textarea {
     display: block;
     position: relative;
     padding-left: 20px;
-    vertical-align: top;
+    /*vertical-align: top;  Si usamos la linea de abajo no deberia usarse.*/
     display: inline-block; }
   
   .arrow {
