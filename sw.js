@@ -2,8 +2,8 @@
 //Importamos scrip externo
 importScripts ('js/sw-utils.js');
 
-const Static_cache    = 'static-v1';
-const Dynamic_cache   = 'dynamic-v1';
+const Static_cache    = 'static-v2';
+const Dynamic_cache   = 'dynamic-v2';
 const Inmutable_cache = 'inmutable-v1';
 
 
@@ -53,6 +53,9 @@ self.addEventListener('activate', e => {
         keys.forEach( key => {
 
             if (  key !== Static_cache && key.includes('static') ) {
+                return caches.delete(key);
+            }
+            if (  key !== Dynamic_cache && key.includes('dynamic') ) {
                 return caches.delete(key);
             }
 
